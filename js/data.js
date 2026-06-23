@@ -5,215 +5,128 @@ window.STATUS_CONFIG = {
   empty: { label:'Нет бензина', color:'#dc2626', bg:'#fee2e2', text:'#7f1d1d', hex:'#dc2626' },
 };
 
-window.STATIONS_SEED = [
-// ЛУКОЙЛ
-{id:'l001',brand:'Лукойл',addr:'Ленинградский пр., 37',lat:55.7965,lng:37.5502,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l002',brand:'Лукойл',addr:'Варшавское ш., 26',lat:55.6897,lng:37.6201,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l003',brand:'Лукойл',addr:'Профсоюзная ул., 130',lat:55.6412,lng:37.5231,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l004',brand:'Лукойл',addr:'Дмитровское ш., 71',lat:55.8721,lng:37.5368,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l005',brand:'Лукойл',addr:'Каширское ш., 51',lat:55.6482,lng:37.6712,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l006',brand:'Лукойл',addr:'Щёлковское ш., 4',lat:55.7901,lng:37.7589,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l007',brand:'Лукойл',addr:'Волоколамское ш., 13',lat:55.7982,lng:37.3721,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l008',brand:'Лукойл',addr:'Кутузовский пр., 57',lat:55.7312,lng:37.3892,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l009',brand:'Лукойл',addr:'Рязанский пр., 10',lat:55.7198,lng:37.7321,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l010',brand:'Лукойл',addr:'Ярославское ш., 2',lat:55.8112,lng:37.6701,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l011',brand:'Лукойл',addr:'Мичуринский пр., 9',lat:55.7021,lng:37.4312,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l012',brand:'Лукойл',addr:'Нагатинская ул., 16',lat:55.6712,lng:37.6289,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l013',brand:'Лукойл',addr:'Бережковская наб., 20',lat:55.7389,lng:37.5521,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l014',brand:'Лукойл',addr:'Алтуфьевское ш., 44',lat:55.8712,lng:37.5982,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l015',brand:'Лукойл',addr:'Можайское ш., 32',lat:55.7201,lng:37.3012,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l016',brand:'Лукойл',addr:'Открытое ш., 18',lat:55.8021,lng:37.7012,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l017',brand:'Лукойл',addr:'Симферопольское ш., 8',lat:55.6201,lng:37.6012,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l018',brand:'Лукойл',addr:'Боровское ш., 43',lat:55.6589,lng:37.3421,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l019',brand:'Лукойл',addr:'Измайловское ш., 71',lat:55.7821,lng:37.8012,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l020',brand:'Лукойл',addr:'Севастопольский пр., 28',lat:55.6512,lng:37.5712,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l021',brand:'Лукойл',addr:'Новослободская ул., 45',lat:55.7812,lng:37.5982,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l022',brand:'Лукойл',addr:'Шереметьевская ул., 6',lat:55.8012,lng:37.6312,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l023',brand:'Лукойл',addr:'Люблинская ул., 104',lat:55.6712,lng:37.7412,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l024',brand:'Лукойл',addr:'Ломоносовский пр., 23',lat:55.6921,lng:37.5312,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l025',brand:'Лукойл',addr:'Минская ул., 5',lat:55.7289,lng:37.4012,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l026',brand:'Лукойл',addr:'Хорошёвское ш., 12',lat:55.7712,lng:37.5089,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l027',brand:'Лукойл',addr:'Пролетарский пр., 18',lat:55.6589,lng:37.6812,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l028',brand:'Лукойл',addr:'Осташковское ш., 4',lat:55.8589,lng:37.6521,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l029',brand:'Лукойл',addr:'Балаклавский пр., 28',lat:55.6289,lng:37.5921,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l030',brand:'Лукойл',addr:'Пятницкое ш., 18',lat:55.8312,lng:37.3312,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l031',brand:'Лукойл',addr:'Солнцевский пр., 9',lat:55.6712,lng:37.3812,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l032',brand:'Лукойл',addr:'Зеленоградская ул., 33',lat:55.8912,lng:37.5089,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l033',brand:'Лукойл',addr:'Верхние Поля, 38',lat:55.6389,lng:37.7589,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'l034',brand:'Лукойл',addr:'Рублёвское ш., 18',lat:55.7489,lng:37.3289,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'l035',brand:'Лукойл',addr:'Бутырская ул., 44',lat:55.7921,lng:37.5989,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-// ГАЗПРОМНЕФТЬ
-{id:'g001',brand:'Газпромнефть',addr:'Тверская ул., 5',lat:55.7621,lng:37.6097,fuels:['АИ-92','АИ-95','АИ-98','ДТ','ГАЗ'],status:'ok'},
-{id:'g002',brand:'Газпромнефть',addr:'Садовая-Самотёчная, 24',lat:55.7700,lng:37.6147,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g003',brand:'Газпромнефть',addr:'Ярославское ш., 9',lat:55.8253,lng:37.6528,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g004',brand:'Газпромнефть',addr:'Варшавское ш., 87',lat:55.6603,lng:37.6194,fuels:['АИ-92','АИ-95','ДТ','ГАЗ'],status:'ok'},
-{id:'g005',brand:'Газпромнефть',addr:'Севастопольский пр., 20',lat:55.6521,lng:37.5689,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g006',brand:'Газпромнефть',addr:'Кутузовский пр., 45',lat:55.7342,lng:37.3881,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g007',brand:'Газпромнефть',addr:'Нижегородская ул., 32',lat:55.7212,lng:37.7189,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g008',brand:'Газпромнефть',addr:'Ленинградский пр., 80',lat:55.8189,lng:37.5301,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g009',brand:'Газпромнефть',addr:'Ореховый бул., 14',lat:55.6189,lng:37.7312,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g010',brand:'Газпромнефть',addr:'Боровское ш., 21',lat:55.6721,lng:37.3512,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g011',brand:'Газпромнефть',addr:'Дмитровское ш., 52',lat:55.8512,lng:37.5589,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g012',brand:'Газпромнефть',addr:'Рязанский пр., 30',lat:55.7189,lng:37.7589,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g013',brand:'Газпромнефть',addr:'Профсоюзная ул., 84',lat:55.6589,lng:37.5389,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g014',brand:'Газпромнефть',addr:'Щёлковское ш., 52',lat:55.8012,lng:37.8112,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g015',brand:'Газпромнефть',addr:'Алтуфьевское ш., 26',lat:55.8589,lng:37.5821,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g016',brand:'Газпромнефть',addr:'Волгоградский пр., 42',lat:55.7112,lng:37.7021,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g017',brand:'Газпромнефть',addr:'Можайское ш., 18',lat:55.7289,lng:37.3189,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g018',brand:'Газпромнефть',addr:'Новослободская ул., 20',lat:55.7789,lng:37.5912,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g019',brand:'Газпромнефть',addr:'Коломенский пр., 12',lat:55.6589,lng:37.6589,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g020',brand:'Газпромнефть',addr:'Открытое ш., 4',lat:55.8112,lng:37.6921,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g021',brand:'Газпромнефть',addr:'Хорошёвское ш., 32',lat:55.7789,lng:37.5021,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g022',brand:'Газпромнефть',addr:'Люблинская ул., 62',lat:55.6812,lng:37.7312,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g023',brand:'Газпромнефть',addr:'Балаклавский пр., 12',lat:55.6389,lng:37.5812,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g024',brand:'Газпромнефть',addr:'Измайловский пр., 18',lat:55.7812,lng:37.7712,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g025',brand:'Газпромнефть',addr:'Солнцевский пр., 28',lat:55.6589,lng:37.3689,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g026',brand:'Газпромнефть',addr:'Пятницкое ш., 28',lat:55.8412,lng:37.3189,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g027',brand:'Газпромнефть',addr:'Бутырская ул., 22',lat:55.7989,lng:37.5912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g028',brand:'Газпромнефть',addr:'Каширское ш., 22',lat:55.6621,lng:37.6589,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'g029',brand:'Газпромнефть',addr:'Зеленоградская ул., 14',lat:55.8812,lng:37.5189,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'g030',brand:'Газпромнефть',addr:'Верхние Поля, 12',lat:55.6421,lng:37.7412,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-// РОСНЕФТЬ
-{id:'r001',brand:'Роснефть',addr:'Новый Арбат, 31',lat:55.7527,lng:37.5813,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r002',brand:'Роснефть',addr:'Садовое кольцо, 22',lat:55.7512,lng:37.6021,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r003',brand:'Роснефть',addr:'Рязанский пр., 62',lat:55.7228,lng:37.7849,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r004',brand:'Роснефть',addr:'Шоссе Энтузиастов, 78',lat:55.7521,lng:37.8012,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r005',brand:'Роснефть',addr:'Варшавское ш., 118',lat:55.6389,lng:37.6289,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r006',brand:'Роснефть',addr:'Дмитровское ш., 28',lat:55.8321,lng:37.5512,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r007',brand:'Роснефть',addr:'Ленинградский пр., 62',lat:55.8089,lng:37.5189,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r008',brand:'Роснефть',addr:'Каширское ш., 88',lat:55.6289,lng:37.6912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r009',brand:'Роснефть',addr:'Нагатинская наб., 32',lat:55.6721,lng:37.6412,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r010',brand:'Роснефть',addr:'Можайское ш., 11',lat:55.7298,lng:37.3428,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r011',brand:'Роснефть',addr:'Боровское ш., 62',lat:55.6512,lng:37.3712,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r012',brand:'Роснефть',addr:'Открытое ш., 28',lat:55.8021,lng:37.7189,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r013',brand:'Роснефть',addr:'Измайловский бул., 47',lat:55.7812,lng:37.7821,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r014',brand:'Роснефть',addr:'Профсоюзная ул., 54',lat:55.6712,lng:37.5421,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r015',brand:'Роснефть',addr:'Алтуфьевское ш., 64',lat:55.8821,lng:37.5921,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r016',brand:'Роснефть',addr:'Симферопольское ш., 22',lat:55.6112,lng:37.6089,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r017',brand:'Роснефть',addr:'Ярославское ш., 34',lat:55.8389,lng:37.6712,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r018',brand:'Роснефть',addr:'Щёлковское ш., 29',lat:55.7921,lng:37.7812,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r019',brand:'Роснефть',addr:'Мичуринский пр., 34',lat:55.6912,lng:37.4512,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r020',brand:'Роснефть',addr:'Волгоградский пр., 9',lat:55.7289,lng:37.6921,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r021',brand:'Роснефть',addr:'Хорошёвское ш., 52',lat:55.7712,lng:37.4912,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r022',brand:'Роснефть',addr:'Пролетарский пр., 38',lat:55.6512,lng:37.6912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r023',brand:'Роснефть',addr:'Осташковское ш., 12',lat:55.8621,lng:37.6389,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r024',brand:'Роснефть',addr:'Балаклавский пр., 44',lat:55.6189,lng:37.5912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r025',brand:'Роснефть',addr:'Пятницкое ш., 8',lat:55.8289,lng:37.3112,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r026',brand:'Роснефть',addr:'Солнцевский пр., 44',lat:55.6512,lng:37.3589,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r027',brand:'Роснефть',addr:'Зеленоградская ул., 25',lat:55.8789,lng:37.5289,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r028',brand:'Роснефть',addr:'Верхние Поля, 28',lat:55.6312,lng:37.7689,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'r029',brand:'Роснефть',addr:'Рублёвское ш., 36',lat:55.7412,lng:37.3112,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'r030',brand:'Роснефть',addr:'Бутырская ул., 62',lat:55.7989,lng:37.5812,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-// ТАТНЕФТЬ
-{id:'t001',brand:'Татнефть',addr:'Ярославское ш., 14',lat:55.8253,lng:37.6589,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t002',brand:'Татнефть',addr:'Можайское ш., 11',lat:55.7298,lng:37.3428,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t003',brand:'Татнефть',addr:'МКАД 61 км',lat:55.8902,lng:37.7348,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t004',brand:'Татнефть',addr:'Дмитровское ш., 40',lat:55.8482,lng:37.5614,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t005',brand:'Татнефть',addr:'Щёлковское ш., 7',lat:55.7898,lng:37.7531,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t006',brand:'Татнефть',addr:'Каширское ш., 34',lat:55.6389,lng:37.6621,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t007',brand:'Татнефть',addr:'Ленинградский пр., 52',lat:55.8021,lng:37.5289,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t008',brand:'Татнефть',addr:'Рязанский пр., 18',lat:55.7189,lng:37.7412,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t009',brand:'Татнефть',addr:'Варшавское ш., 64',lat:55.6512,lng:37.6289,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t010',brand:'Татнефть',addr:'Волоколамское ш., 52',lat:55.8112,lng:37.3512,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t011',brand:'Татнефть',addr:'Шоссе Энтузиастов, 44',lat:55.7589,lng:37.7821,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t012',brand:'Татнефть',addr:'Профсоюзная ул., 110',lat:55.6521,lng:37.5289,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t013',brand:'Татнефть',addr:'Алтуфьевское ш., 82',lat:55.8789,lng:37.5912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t014',brand:'Татнефть',addr:'Боровское ш., 84',lat:55.6389,lng:37.3589,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t015',brand:'Татнефть',addr:'Открытое ш., 38',lat:55.8089,lng:37.7312,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t016',brand:'Татнефть',addr:'Хорошёвское ш., 18',lat:55.7789,lng:37.5089,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t017',brand:'Татнефть',addr:'Балаклавский пр., 8',lat:55.6421,lng:37.5789,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t018',brand:'Татнефть',addr:'Измайловский пр., 44',lat:55.7789,lng:37.7912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t019',brand:'Татнефть',addr:'Нагатинская наб., 12',lat:55.6789,lng:37.6312,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'t020',brand:'Татнефть',addr:'Пятницкое ш., 44',lat:55.8489,lng:37.3089,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-// ОРТК
-{id:'o001',brand:'ОРТК',addr:'МКАД 45 км (север)',lat:55.8721,lng:37.4217,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o002',brand:'ОРТК',addr:'МКАД 84 км (юго-запад)',lat:55.6314,lng:37.3571,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'o003',brand:'ОРТК',addr:'МКАД 105 км (юг)',lat:55.5889,lng:37.6021,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o004',brand:'ОРТК',addr:'МКАД 13 км (восток)',lat:55.7831,lng:37.8612,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o005',brand:'ОРТК',addr:'МКАД 22 км (север)',lat:55.9012,lng:37.5589,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'o006',brand:'ОРТК',addr:'МКАД 72 км (запад)',lat:55.7321,lng:37.2789,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o007',brand:'ОРТК',addr:'МКАД 33 км (северо-восток)',lat:55.8912,lng:37.6921,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o008',brand:'ОРТК',addr:'Варшавское ш., 140',lat:55.6189,lng:37.6312,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'o009',brand:'ОРТК',addr:'Ярославское ш., 108',lat:55.8712,lng:37.6889,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o010',brand:'ОРТК',addr:'Щёлковское ш., 84',lat:55.8012,lng:37.8312,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o011',brand:'ОРТК',addr:'Симферопольское ш., 44',lat:55.6021,lng:37.6112,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'o012',brand:'ОРТК',addr:'Горьковское ш., 22',lat:55.7712,lng:37.8389,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-// SHELL
-{id:'sh001',brand:'Shell',addr:'Кутузовский пр., 40',lat:55.7342,lng:37.3881,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh002',brand:'Shell',addr:'Новорижское ш., 3 км',lat:55.7749,lng:37.3224,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh003',brand:'Shell',addr:'Ленинградское ш., 58',lat:55.8389,lng:37.4521,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh004',brand:'Shell',addr:'Дмитровское ш., 100',lat:55.8912,lng:37.5312,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh005',brand:'Shell',addr:'Варшавское ш., 52',lat:55.6589,lng:37.6221,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh006',brand:'Shell',addr:'Можайское ш., 58',lat:55.7189,lng:37.2789,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh007',brand:'Shell',addr:'Каширское ш., 62',lat:55.6289,lng:37.6812,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh008',brand:'Shell',addr:'Ярославское ш., 58',lat:55.8589,lng:37.6812,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh009',brand:'Shell',addr:'Щёлковское ш., 62',lat:55.8089,lng:37.8189,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'sh010',brand:'Shell',addr:'Рязанский пр., 52',lat:55.7089,lng:37.7712,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-// BP
-{id:'bp001',brand:'BP',addr:'Новорижское ш., 1 км',lat:55.7749,lng:37.3124,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'bp002',brand:'BP',addr:'Ленинградское ш., 44',lat:55.8289,lng:37.4712,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'bp003',brand:'BP',addr:'Рублёвское ш., 28',lat:55.7489,lng:37.3212,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'bp004',brand:'BP',addr:'Каширское ш., 24',lat:55.6589,lng:37.6589,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'bp005',brand:'BP',addr:'Волгоградский пр., 44',lat:55.7089,lng:37.7189,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'bp006',brand:'BP',addr:'Дмитровское ш., 78',lat:55.8712,lng:37.5421,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'bp007',brand:'BP',addr:'Боровское ш., 32',lat:55.6612,lng:37.3512,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-// NESTE
-{id:'n001',brand:'Neste',addr:'Ленинградское ш., 71',lat:55.8489,lng:37.4389,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'n002',brand:'Neste',addr:'Дмитровское ш., 85',lat:55.8812,lng:37.5412,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'n003',brand:'Neste',addr:'Ярославское ш., 26',lat:55.8312,lng:37.6589,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'n004',brand:'Neste',addr:'Варшавское ш., 38',lat:55.6712,lng:37.6212,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'n005',brand:'Neste',addr:'Волоколамское ш., 28',lat:55.8189,lng:37.3612,fuels:['АИ-95','АИ-98','ДТ'],status:'ok'},
-// ТРАССА
-{id:'tr001',brand:'Трасса',addr:'МКАД 55 км',lat:55.6489,lng:37.4012,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'tr002',brand:'Трасса',addr:'МКАД 18 км',lat:55.8212,lng:37.8489,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'tr003',brand:'Трасса',addr:'Каширское ш., 44',lat:55.6412,lng:37.6712,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'tr004',brand:'Трасса',addr:'Волоколамское ш., 84',lat:55.8312,lng:37.3212,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'tr005',brand:'Трасса',addr:'Рязанский пр., 84',lat:55.7089,lng:37.7912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'tr006',brand:'Трасса',addr:'Симферопольское ш., 55',lat:55.6089,lng:37.6189,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-// СУРГУТНЕФТЕГАЗ
-{id:'sng001',brand:'Сургутнефтегаз',addr:'Ленинградский пр., 28',lat:55.7889,lng:37.5412,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'sng002',brand:'Сургутнефтегаз',addr:'Ярославское ш., 44',lat:55.8412,lng:37.6712,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'sng003',brand:'Сургутнефтегаз',addr:'Щёлковское ш., 38',lat:55.7921,lng:37.7912,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'sng004',brand:'Сургутнефтегаз',addr:'Дмитровское ш., 64',lat:55.8612,lng:37.5512,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'sng005',brand:'Сургутнефтегаз',addr:'Каширское ш., 78',lat:55.6289,lng:37.6821,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-// БАШНЕФТЬ
-{id:'b001',brand:'Башнефть',addr:'Варшавское ш., 44',lat:55.6712,lng:37.6189,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'b002',brand:'Башнефть',addr:'Каширское ш., 56',lat:55.6389,lng:37.6789,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'b003',brand:'Башнефть',addr:'Рязанский пр., 44',lat:55.7189,lng:37.7589,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-{id:'b004',brand:'Башнефть',addr:'Открытое ш., 14',lat:55.8089,lng:37.7012,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'b005',brand:'Башнефть',addr:'Боровское ш., 52',lat:55.6489,lng:37.3612,fuels:['АИ-92','АИ-95','АИ-98','ДТ'],status:'ok'},
-// НЕЗАВИСИМЫЕ — по всем районам
-{id:'ind001',brand:'АЗС',addr:'Профсоюзная ул., 148',lat:55.6289,lng:37.5189,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind002',brand:'АЗС',addr:'Щёлковское ш., 100',lat:55.8089,lng:37.8412,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind003',brand:'АЗС',addr:'Боровское ш., 105',lat:55.6289,lng:37.3389,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind004',brand:'АЗС',addr:'Симферопольское ш., 38',lat:55.6089,lng:37.6112,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind005',brand:'АЗС',addr:'Горьковское ш., 12',lat:55.7721,lng:37.8212,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind006',brand:'АЗС',addr:'Киевское ш., 18',lat:55.6989,lng:37.3589,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind007',brand:'АЗС',addr:'Пятницкое ш., 8',lat:55.8289,lng:37.3112,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind008',brand:'АЗС',addr:'Волоколамское ш., 34',lat:55.8089,lng:37.3589,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind009',brand:'АЗС',addr:'Рублёвское ш., 44',lat:55.7489,lng:37.3089,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind010',brand:'АЗС',addr:'Мичуринский пр., 58',lat:55.6789,lng:37.4312,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind011',brand:'АЗС',addr:'Нагорный пр., 18',lat:55.6521,lng:37.6089,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind012',brand:'АЗС',addr:'Люблинская ул., 148',lat:55.6589,lng:37.7589,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind013',brand:'АЗС',addr:'Новоясеневский пр., 12',lat:55.6112,lng:37.5312,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind014',brand:'АЗС',addr:'Дмитровское ш., 112',lat:55.8912,lng:37.5589,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind015',brand:'АЗС',addr:'Рязанский пр., 98',lat:55.7012,lng:37.8089,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind016',brand:'АЗС',addr:'Южнопортовый пр., 8',lat:55.7089,lng:37.6789,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind017',brand:'АЗС',addr:'Кировоградская ул., 18',lat:55.6189,lng:37.6289,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind018',brand:'АЗС',addr:'Зеленодольская ул., 32',lat:55.7089,lng:37.7512,fuels:['АИ-92','АИ-95'],status:'ok'},
-{id:'ind019',brand:'АЗС',addr:'Сходненская ул., 28',lat:55.8312,lng:37.4089,fuels:['АИ-92','АИ-95','ДТ'],status:'ok'},
-{id:'ind020',brand:'АЗС',addr:'Первомайская ул., 44',lat:55.7812,lng:37.8089,fuels:['АИ-92','АИ-95'],status:'ok'},
-];
+// Заправки загружаются из OpenStreetMap через Overpass API
+// Этот массив пуст — данные приходят динамически
+window.STATIONS_SEED = [];
 
-window.SEED_REPORTS = [
-  {stationId:'t001',type:'empty',note:'АИ-95 закончился',ts:Date.now()-25*60000},
-  {stationId:'g003',type:'queue',note:'Очередь ~25 мин, лимит 40л',ts:Date.now()-18*60000},
-  {stationId:'o001',type:'limit',note:'Не больше 30л на машину',ts:Date.now()-10*60000},
-  {stationId:'r003',type:'empty',note:'Закрыто, нет топлива',ts:Date.now()-40*60000},
-  {stationId:'t002',type:'empty',note:'АИ-92 и АИ-95 нет',ts:Date.now()-55*60000},
-  {stationId:'o003',type:'limit',note:'Лимит 60л, только карты',ts:Date.now()-8*60000},
-  {stationId:'g016',type:'queue',note:'Очередь из 15 машин',ts:Date.now()-30*60000},
-  {stationId:'t003',type:'empty',note:'Бензина нет, дизель есть',ts:Date.now()-20*60000},
-  {stationId:'l002',type:'queue',note:'Медленно, ~20 мин',ts:Date.now()-12*60000},
-  {stationId:'l011',type:'queue',note:'Очередь ~10 мин',ts:Date.now()-5*60000},
-];
+window.SEED_REPORTS = [];
+
+// Загрузка всех АЗС Москвы из OpenStreetMap
+window.loadOSMStations = function(onLoaded) {
+  // Запрос Overpass: все точки и полигоны с тегом amenity=fuel в границах Москвы
+  const query = `
+    [out:json][timeout:30];
+    (
+      node["amenity"="fuel"](55.49,37.27,55.92,37.97);
+      way["amenity"="fuel"](55.49,37.27,55.92,37.97);
+    );
+    out center;
+  `;
+
+  const url = 'https://overpass-api.de/api/interpreter';
+
+  fetch(url, {
+    method: 'POST',
+    body: 'data=' + encodeURIComponent(query),
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  })
+  .then(r => r.json())
+  .then(data => {
+    const stations = [];
+    data.elements.forEach(el => {
+      const lat = el.lat || (el.center && el.center.lat);
+      const lng = el.lon || (el.center && el.center.lon);
+      if (!lat || !lng) return;
+
+      const tags = el.tags || {};
+      const brand = detectBrandOSM(tags);
+      const addr = buildAddr(tags);
+      const fuels = detectFuels(tags);
+
+      stations.push({
+        id: 'osm_' + el.id,
+        brand,
+        addr,
+        lat,
+        lng,
+        fuels,
+        status: 'ok',
+        source: 'osm',
+      });
+    });
+    window.STATIONS_SEED = stations;
+    if (onLoaded) onLoaded(stations);
+  })
+  .catch(err => {
+    console.warn('Overpass недоступен, пробуем зеркало...', err);
+    // Резервное зеркало
+    fetch('https://maps.mail.ru/osm/tools/overpass/api/interpreter', {
+      method: 'POST',
+      body: 'data=' + encodeURIComponent(query),
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    })
+    .then(r => r.json())
+    .then(data => {
+      const stations = [];
+      data.elements.forEach(el => {
+        const lat = el.lat || (el.center && el.center.lat);
+        const lng = el.lon || (el.center && el.center.lon);
+        if (!lat || !lng) return;
+        const tags = el.tags || {};
+        stations.push({
+          id: 'osm_' + el.id,
+          brand: detectBrandOSM(tags),
+          addr: buildAddr(tags),
+          lat, lng,
+          fuels: detectFuels(tags),
+          status: 'ok',
+          source: 'osm',
+        });
+      });
+      window.STATIONS_SEED = stations;
+      if (onLoaded) onLoaded(stations);
+    })
+    .catch(() => {
+      if (onLoaded) onLoaded([]);
+    });
+  });
+};
+
+function detectBrandOSM(tags) {
+  const name = (tags.brand || tags.name || tags.operator || '').trim();
+  const n = name.toLowerCase();
+  if (n.includes('лукойл') || n.includes('lukoil'))       return 'Лукойл';
+  if (n.includes('газпром') || n.includes('gazprom'))     return 'Газпромнефть';
+  if (n.includes('роснефть') || n.includes('rosneft'))    return 'Роснефть';
+  if (n.includes('татнефть') || n.includes('tatneft'))    return 'Татнефть';
+  if (n.includes('ортк'))                                  return 'ОРТК';
+  if (n.includes('shell') || n.includes('шелл'))          return 'Shell';
+  if (n.includes('bp') || n.includes('бп'))               return 'BP';
+  if (n.includes('neste') || n.includes('несте'))         return 'Neste';
+  if (n.includes('трасса'))                                return 'Трасса';
+  if (n.includes('башнефть'))                              return 'Башнефть';
+  if (n.includes('сургут'))                                return 'Сургутнефтегаз';
+  if (n.includes('евро'))                                  return 'ЕвроАЗС';
+  if (n.includes('tnk') || n.includes('тнк'))             return 'ТНК';
+  if (name) return name;
+  return 'АЗС';
+}
+
+function buildAddr(tags) {
+  const parts = [];
+  if (tags['addr:street'])      parts.push(tags['addr:street']);
+  if (tags['addr:housenumber']) parts.push(tags['addr:housenumber']);
+  if (parts.length) return parts.join(', ');
+  if (tags.name && tags.name.length < 60) return tags.name;
+  return 'Москва';
+}
+
+function detectFuels(tags) {
+  const fuels = [];
+  if (tags['fuel:octane_92'] === 'yes' || tags['fuel:92'])  fuels.push('АИ-92');
+  if (tags['fuel:octane_95'] === 'yes' || tags['fuel:95'])  fuels.push('АИ-95');
+  if (tags['fuel:octane_98'] === 'yes' || tags['fuel:98'])  fuels.push('АИ-98');
+  if (tags['fuel:diesel'] === 'yes')                         fuels.push('ДТ');
+  if (tags['fuel:lpg'] === 'yes' || tags['fuel:gas'])        fuels.push('ГАЗ');
+  return fuels.length ? fuels : ['АИ-92', 'АИ-95', 'ДТ'];
+}
